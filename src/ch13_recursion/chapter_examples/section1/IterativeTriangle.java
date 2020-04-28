@@ -17,6 +17,11 @@ public class IterativeTriangle {
      */
     public int getArea() {
 
-        return (width * (width + 1) / 2);
+        int area = 0;
+        for(int i = 1; i <= width; i++) {
+            area += i;
+        }
+        return area;
+        //return (width * (width + 1) / 2);
     }
 }

@@ -68,8 +68,8 @@ public class TriangleTester {
 
         System.out.println("\n\nRun 5:");
 
-        rt = new RecursiveTriangle(9_999);
-        ir = new IterativeTriangle(9_999);
+        rt = new RecursiveTriangle(8_000);
+        ir = new IterativeTriangle(8_000);
 
         start = System.currentTimeMillis();
         rArea = rt.getArea();
