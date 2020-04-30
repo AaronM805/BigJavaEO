@@ -1,5 +1,6 @@
-package ch14_sorting_and_searching.practice_exercises;
+package ch14_sorting_and_searching.practice_exercises.sorts;
 
+import ch14_sorting_and_searching.practice_exercises.Coin;
 import ch14_sorting_and_searching.practice_exercises.utils.ArrayUtil;
 
 public class SelectionSorter {
