@@ -1,6 +1,6 @@
-package ch13_recursion.self_check;
+package ch13_recursion.practice_exercises;
 
-public class SC_2 {
+public class E13_2 {
     public static void main(String[] args) {
         Square square = new Square(5);
         System.out.println("Run 1");
@@ -43,13 +43,16 @@ class Square {
      */
     public int getArea() {
 
+        return getArea(width);
+        
+    }
+
+    private int getArea(int width) {
         if(width <= 0) {
             return 0;
         }
         else {
-            Square smallerTriangle = new Square(width - 1);
-            int smallerArea = smallerTriangle.getArea();
-            return smallerArea + width + width - 1;
+            return getArea(width - 1) + width + width - 1;
         }
     }
 }
