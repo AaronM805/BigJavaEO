@@ -5,12 +5,15 @@ import java.util.Arrays;
 /**
  * Difficulty: Medium
  * 
- * Prompt: Write enhanced for loops for the following tasks: a. Printing all
- * elements of an array in a single row, separated by spaces. b. Computing the
- * maximum of all elements in an array. c. Counting how many elements in an
- * array are negative
+ * Prompt:
+ * Write enhanced for loops for the following tasks:
+ *      a. Printing all elements of an array in a single row, separated by spaces.
+ *      b. Computing the maximum of all elements in an array.
+ *      c. Counting how many elements in an array are negative
  *
- * TIME: Time Complexity Space Complexity:
+ * TIME:
+ * Time Complexity:
+ * Space Complexity:
  */
 public class R7_11 {
     public static void main(String[] args) {

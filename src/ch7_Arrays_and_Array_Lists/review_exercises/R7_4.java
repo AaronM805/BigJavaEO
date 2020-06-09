@@ -29,6 +29,7 @@ public class R7_4 {
             arr[count] = in.nextDouble();
             count++;
         }
+        in.close();
         
         System.out.print("The values, in reverse order, are: ");
         for(int idx = arr.length - 1; idx >= 0; idx--) {
