@@ -1,4 +1,4 @@
-package ch14_sorting_and_searching.practice_exercises.utils;
+package utils;
 
 import java.util.Random;
 
@@ -28,6 +28,23 @@ public class ArrayUtil
       
       return a;
    }
+
+   /**
+      Creates an array filled with random values.
+      @param length the length of the array
+      @param n the number of possible random values
+      @return an array filled with length numbers between
+      0 and n - 1
+   */
+  public static long[] randomLongArray(int length, long n)
+  {  
+     long[] a = new long[length];
+     for (int i = 0; i < a.length; i++)
+     {
+        a[i] = generator.nextLong() * n;
+     }
+     return a;
+  }
 
    /**
       Creates an array filled with random Coin objects.
