@@ -1,7 +1,8 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import ch14_sorting_and_searching.practice_exercises.utils.ArrayUtil;
 import java.util.Arrays;
+
+import utils.ArrayUtil;
 
 /**
  * Difficulty: Medium
