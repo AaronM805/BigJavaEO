@@ -1,29 +1,18 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import java.util.Scanner;
 /**
- * Difficulty: Medium
+ * Difficulty: Hard
  * 
  * Prompt
- * Write a program that reads a sequence of input values and displays a bar chart of the values, using asterisks, like this:
- *
- *	**********************
- *	****************************************
- *	*****************************
- *	***************************
- *	**************
- *
- * You may assume that all values are positive. First figure out the maximum value. That value's bar should be drawn with 40
- * asterisks. Shorter bars should use proportionally fewer asterisks.
+ * Repeat Exercise 18, but make the bars vertical, with the tallest bar twenty asterisks high.
  *
  * TIME: 00:41:05
  * Time Complexity: O(N^2)
  * Space Complexity: O(1)
  */
-public class E7_18 {
+public class E7_19 {
+	public static final int MAX = 20;
 
-	public static final int MAX = 40;
-	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -51,6 +40,7 @@ public class E7_18 {
 	public static void drawGraph(int[] array) {
 		double largest = (double) findLargest(array);
 
+
 		for(int i = 0; i < array.length; i++) {
 			int ceiling = (int) ((array[i] / largest) * MAX);
 			for(int j = 0; j < ceiling; j++) {
@@ -74,4 +64,7 @@ public class E7_18 {
 		}
 		return largest;
 	}
+
+	private static int[] createGraph()
+
 }

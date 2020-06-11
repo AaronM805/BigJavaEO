@@ -1,17 +1,16 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import java.util.Scanner;
 /**
  * Difficulty: Medium
  * 
  * Prompt
- * Write a program that reads a sequence of input values and displays a bar chart of the values, using asterisks, like this:
+ *  Improve the program in Exercise 18 by adding captions for each bar. Prompt the user for the captions and data values. The output should look like this:
  *
- *	**********************
- *	****************************************
- *	*****************************
- *	***************************
- *	**************
+ *	      Egypt **********************
+ *	     France ****************************************
+ *	      Japan *****************************
+ *	    Uruguay ***************************
+ *	Switzerland **************
  *
  * You may assume that all values are positive. First figure out the maximum value. That value's bar should be drawn with 40
  * asterisks. Shorter bars should use proportionally fewer asterisks.
@@ -20,8 +19,7 @@ import java.util.Scanner;
  * Time Complexity: O(N^2)
  * Space Complexity: O(1)
  */
-public class E7_18 {
-
+public class E7_21 {
 	public static final int MAX = 40;
 	
 	public static void main(String[] args) {
