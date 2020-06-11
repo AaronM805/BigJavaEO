@@ -8,7 +8,7 @@ public class E7_12 {
  * Difficulty: Medium
  * 
  * Prompt
- * Add a method
+ * Add method
  * 		public boolean sameValues(Sequence other)
  *
  * to the Sequence class that checks whether two sequences have the same value in some order, ignoring duplicates. For example,
