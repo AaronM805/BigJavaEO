@@ -33,8 +33,6 @@ public class R7_21 {
             }
             nextPos++;
         }
-
         return currPos;
     }
-    
 }
