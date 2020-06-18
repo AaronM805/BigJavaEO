@@ -19,7 +19,18 @@ public class E13_2 {
     }
 }
 
+
 /**
+ * Difficulty: Medium
+ * 
+ * Prompt:
+ * Given a class Square with an instance variable width, provide a recursive getArea method. Construct a square whose width is
+ * one less than the original and call its getArea method.
+ * 
+ * TIME:
+ * Time Complexity:
+ * Space Complexity:
+ *
  * A square shape composed of stacked unit squares like this:
  * [][][]
  * [][][]

@@ -17,6 +17,17 @@ public class E13_1 {
     }
 }
 
+/**
+ * Difficulty: Easy
+ * 
+ * Prompt:
+ * Given a class Rectangle with instance variables width and height, provide a recursive getArea method. Construct a rectangle
+ * whose width is one less than the original and call its getArea method.
+ * 
+ * TIME:
+ * Time Complexity:
+ * Space Complexity:
+ */
 class Rectangle {
     private final int width;
     private final int height;
