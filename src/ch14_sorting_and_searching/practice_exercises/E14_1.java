@@ -3,7 +3,7 @@ package ch14_sorting_and_searching.practice_exercises;
 import java.util.Arrays;
 
 import ch14_sorting_and_searching.practice_exercises.sorts.SelectionSorter;
-import ch14_sorting_and_searching.practice_exercises.utils.ArrayUtil;
+import utils.ArrayUtil;
 
 /**
  * Tester class for SelectionSort.
