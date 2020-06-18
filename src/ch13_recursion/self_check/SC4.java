@@ -1,6 +1,6 @@
 package ch13_recursion.self_check;
 
-public class SC_4 {
+public class SC4 {
 
     public static void main(String[] args) {
 

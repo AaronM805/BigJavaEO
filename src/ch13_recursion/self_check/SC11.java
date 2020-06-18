@@ -1,6 +1,6 @@
 package ch13_recursion.self_check;
 
-public class SC_11 {
+public class SC11 {
 
     public static void main(String[] args) {
         int value = 4;
@@ -13,12 +13,12 @@ public class SC_11 {
         System.out.println("Iterative: " + iterativeFactorial(value));
         System.out.println("Expected: 3628800");
 
-        value = 50;
+        value = 13;
         System.out.println("Recursive: " + recursiveFactorial(value));
         System.out.println("Iterative: " + iterativeFactorial(value));
         System.out.println("Expected: 3628800");
 
-        value = 100;
+        value = 15;
         System.out.println("Recursive: " + recursiveFactorial(value));
         System.out.println("Iterative: " + iterativeFactorial(value));
         System.out.println("Expected: 3628800");

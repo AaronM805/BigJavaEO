@@ -22,6 +22,5 @@ public class IterativeTriangle {
             area += i;
         }
         return area;
-        //return (width * (width + 1) / 2);
     }
 }

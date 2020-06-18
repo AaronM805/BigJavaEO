@@ -1,6 +1,6 @@
 package ch13_recursion.self_check;
 
-public class SC_2 {
+public class SC2 {
     public static void main(String[] args) {
         Square square = new Square(5);
         System.out.println("Run 1");

@@ -27,9 +27,6 @@ public class RecursiveTriangle {
         if(width <= 0) {
             return 0;
         }
-        else if(width == 1) {
-            return 1;
-        }
         else {
             RecursiveTriangle smallerTriangle = new RecursiveTriangle(width - 1);
             int smallerArea = smallerTriangle.getArea();
