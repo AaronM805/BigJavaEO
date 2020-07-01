@@ -25,7 +25,7 @@ public class LinkedList {
 	 * Constructs  an empty linked list.
 	 */
 	public LinkedList() {
-		head = null;
+	   head = null;
 	}
 
 	/**
