@@ -47,7 +47,7 @@ public class LinkedList {
 	 * @return the first element in the linked list
 	 */
 	public Object getFirst() {
-		if(first == null) {
+		if(head == null) {
 			throw new NoSuchElementException();
 		}
 		return head.data;
@@ -86,12 +86,13 @@ public class LinkedList {
 
 		sb.append("[");
 		while(iter.hasNext()) {
+			Object next = iter.next();
 			String delimiter = iter.hasNext() ? ", " : "";
-			sb.append(iter.next).append(delimiter);
+			sb.append(next).append(delimiter);
 		}
 		sb.append("]");
 
-		sb.toString();
+		return sb.toString();
 	}
 
 	class LinkedListIterator implements ListIterator {
