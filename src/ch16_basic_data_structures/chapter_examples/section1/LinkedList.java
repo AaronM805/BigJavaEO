@@ -86,12 +86,13 @@ public class LinkedList {
 
 		sb.append("[");
 		while(iter.hasNext()) {
+			Object next = iter.next();
 			String delimiter = iter.hasNext() ? ", " : "";
-			sb.append(iter.next).append(delimiter);
+			sb.append(next).append(delimiter);
 		}
 		sb.append("]");
 
-		sb.toString();
+		return sb.toString();
 	}
 
 	class LinkedListIterator implements ListIterator {
