@@ -80,6 +80,20 @@ public class LinkedList {
 		return element;
 	}
 
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		ListIterator iter = this.listIterator();
+
+		sb.append("[");
+		while(iter.hasNext()) {
+			String delimiter = iter.hasNext() ? ", " : "";
+			sb.append(iter.next).append(delimiter);
+		}
+		sb.append("]");
+
+		sb.toString();
+	}
+
 	class LinkedListIterator implements ListIterator {
 		private Node position;
 		private Node previous;
