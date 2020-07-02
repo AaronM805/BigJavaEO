@@ -8,6 +8,7 @@ package ch16_basic_data_structures.chapter_examples.section1;
  */
 public class LinkedListTester {
     public static void main(String[] args) {
+<<<<<<< HEAD
         LinkedList list = initializeLinkedList();
         System.out.println(list);
         System.out.println(list.getFirst());
@@ -71,6 +72,8 @@ public class LinkedListTester {
     }
 
     private static LinkedList initializeLinkedList() {
+=======
+>>>>>>> Updated chapter examples.
         LinkedList list = new LinkedList();
         list.addFirst("A");
         list.addFirst("B");
@@ -78,7 +81,13 @@ public class LinkedListTester {
         list.addFirst("D");
         list.addFirst("E");
         list.addFirst("F");
+<<<<<<< HEAD
 
         return list;
+=======
+        System.out.println(list);
+        ListIterator iterator = list.listIterator();
+
+>>>>>>> Updated chapter examples.
     }
 }
