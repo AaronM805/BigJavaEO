@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 package ch16_basic_data_structures.chapter_examples.section1;
-=======
-<<<<<<< HEAD:src/ch16_basic_data_structures/self_check/LinkedList.java
-package ch16_basic_data_structures.self_check;
 
-import ch16_basic_data_structures.chapter_examples.section1.ListIterator;
-=======
-package ch16_basic_data_structures.chapter_examples.section1;
->>>>>>> Updated chapter examples.:src/ch16_basic_data_structures/chapter_examples/section1/LinkedList.java
->>>>>>> Updated chapter examples.
 
 import java.util.NoSuchElementException;
 
@@ -19,19 +10,12 @@ import java.util.NoSuchElementException;
  * of the standard java.util.LinkedList class.
  *
  * @author Aaron Martinez
-<<<<<<< HEAD
- * @version 0.1
-=======
  * @version 0.2
->>>>>>> Updated chapter examples.
  */
 public class LinkedList {
 
 	private Node head;
-<<<<<<< HEAD
 	private int currentSize;
-=======
->>>>>>> Updated chapter examples.
 	// may or may not be provided in other implemenations.
 	// private Node tail;
 
@@ -41,12 +25,8 @@ public class LinkedList {
 	 * Constructs  an empty linked list.
 	 */
 	public LinkedList() {
-<<<<<<< HEAD
 		head = null;
 		currentSize = 0;
-=======
-	   head = null;
->>>>>>> Updated chapter examples.
 	}
 
 	/**
@@ -60,9 +40,7 @@ public class LinkedList {
 		Node newNode = new Node(element);
 		newNode.next = head;
 		head = newNode;
-<<<<<<< HEAD
 		currentSize++;
-=======
 	}
 
 	/**
@@ -79,7 +57,6 @@ public class LinkedList {
 
 		Node newNode = new Node(element);
 		tmp.next = newNode;
->>>>>>> Updated chapter examples.
 	}
 
 	/**
@@ -97,7 +74,6 @@ public class LinkedList {
 	}
 
 	/**
-<<<<<<< HEAD
 	 * Gets the head of the linked list. This is not a correct implementation, but we just doing this to solve for Practice
 	 * Problem E16_5.
 	 *
@@ -108,8 +84,6 @@ public class LinkedList {
 	}
 
 	/**
-=======
->>>>>>> Updated chapter examples.
 	 * Returns an iterator for iterating through this list.
 	 *
 	 * @return an iterator for iterating through this list
@@ -132,15 +106,11 @@ public class LinkedList {
 
 		Object element = head.data;
 		head = head.next;
-<<<<<<< HEAD
 		currentSize--;
-=======
->>>>>>> Updated chapter examples.
 
 		return element;
 	}
 
-<<<<<<< HEAD
 	/**
 	 * Gets the current size of this linked list.
 	 *
@@ -155,15 +125,12 @@ public class LinkedList {
 	 *
 	 * @return current representation of this linked list
 	 */
-=======
->>>>>>> Updated chapter examples.
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		ListIterator iter = this.listIterator();
 
 		sb.append("[");
 		while(iter.hasNext()) {
-<<<<<<< HEAD
 			Object next = iter.next();
 			String delimiter = iter.hasNext() ? ", " : "";
 			sb.append(next).append(delimiter);
@@ -171,14 +138,6 @@ public class LinkedList {
 		sb.append("]");
 
 		return sb.toString();
-=======
-			String delimiter = iter.hasNext() ? ", " : "";
-			sb.append(iter.next).append(delimiter);
-		}
-		sb.append("]");
-
-		sb.toString();
->>>>>>> Updated chapter examples.
 	}
 
 	class LinkedListIterator implements ListIterator {
@@ -214,10 +173,7 @@ public class LinkedList {
 				position = newNode;
 			}
 			isAfterNext = false;
-<<<<<<< HEAD
 			currentSize++;
-=======
->>>>>>> Updated chapter examples.
 		}
 
 		/**
@@ -271,13 +227,9 @@ public class LinkedList {
 			}
 			else {
 				previous.next = position.next;
-<<<<<<< HEAD
 				currentSize--;
 			}
-=======
-			}
 
->>>>>>> Updated chapter examples.
 			position = previous;
 			isAfterNext = false;
 		}
@@ -296,16 +248,12 @@ public class LinkedList {
 		}
 	}
 
-<<<<<<< HEAD
 	/**
 	 * A node is a concept used to store inforation for each linked list node. We are making this class public to solve for
 	 * Practice Exercise E16.5.
 	 *
 	 */
 	public class Node {
-=======
-	class Node {
->>>>>>> Updated chapter examples.
 		public Object data;
 		public Node next;
 
