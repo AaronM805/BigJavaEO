@@ -22,6 +22,7 @@ import ch16_basic_data_structures.chapter_examples.section1.LinkedList;
  *Difficulty: Medium
  */
 public class E16_2 {
+
 }
 
 class MyLinkedList extends LinkedList {
