@@ -14,6 +14,7 @@ import java.util.NoSuchElementException;
 public class LinkedList {
 
 	private Node head;
+	private int currentSize;
 	// may or may not be provided in other implemenations.
 	// private Node tail;
 
@@ -24,6 +25,7 @@ public class LinkedList {
 	 */
 	public LinkedList() {
 		head = null;
+		currentSize = 0;
 	}
 
 	/**
@@ -37,6 +39,24 @@ public class LinkedList {
 		Node newNode = new Node(element);
 		newNode.next = head;
 		head = newNode;
+		currentSize++;
+	}
+
+	/**
+	 * Calculates the current size of the linked list by iterating over it. This is from Practice Exercise E16.4.
+	 *
+	 * @return the current size of the linked list
+	 */
+	public int calculateSize() {
+		int count = 0;
+
+		ListIterator iter = this.listIterator();
+
+		while(iter.hasNext()) {
+			iter.next();
+			count++;
+		}
+		return count;
 	}
 
 	/**
@@ -51,6 +71,16 @@ public class LinkedList {
 			throw new NoSuchElementException();
 		}
 		return head.data;
+	}
+
+	/**
+	 * Gets the current size recursively. This is from Practice Exercise E16_5.
+	 *
+	 * @return the current size of the linked list.
+	 */
+	public int getSizeRecursively() {
+		Node start = head;
+		return size(start);
 	}
 
 	/**
@@ -76,10 +106,25 @@ public class LinkedList {
 
 		Object element = head.data;
 		head = head.next;
+		currentSize--;
 
 		return element;
 	}
 
+	/**
+	 * Gets the current size of this linked list.
+	 *
+	 * @return this size
+	 */
+	public int size() {
+		return currentSize;
+	}
+
+	/**
+	 * Gets the string representation of this linked list.
+	 *
+	 * @return current representation of this linked list
+	 */
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		ListIterator iter = this.listIterator();
@@ -93,6 +138,19 @@ public class LinkedList {
 		sb.append("]");
 
 		return sb.toString();
+	}
+
+	private int size(Node start) {
+		/*
+		A B C D E F G
+		|
+		*/
+		if (start == null) {
+			return 0;
+		}
+		else {
+			return size(start.next) + 1;
+		}
 	}
 
 	class LinkedListIterator implements ListIterator {
@@ -128,6 +186,7 @@ public class LinkedList {
 				position = newNode;
 			}
 			isAfterNext = false;
+			currentSize++;
 		}
 
 		/**
@@ -181,8 +240,8 @@ public class LinkedList {
 			}
 			else {
 				previous.next = position.next;
+				currentSize--;
 			}
-
 			position = previous;
 			isAfterNext = false;
 		}
