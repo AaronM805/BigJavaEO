@@ -18,14 +18,10 @@ import ch16_basic_data_structures.chapter_examples.section1.ListIterator;
 public class E16_6 {
     public static void main(String[] args) {
         LinkedList list = initializeLinkedList();
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 6");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 6");
         System.out.println("size(): " + list.size() + ", expected: 6");
 
         list.removeFirst();
         list.removeFirst();
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 4");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 4");
         System.out.println("size(): " + list.size() + ", expected: 4");
 
         list.addFirst("G");
@@ -34,8 +30,6 @@ public class E16_6 {
         list.addFirst("J");
         list.addFirst("K");
         list.addFirst("L");
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 10");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 10");
         System.out.println("size(): " + list.size() + ", expected: 10");
 
         ListIterator iterator = list.listIterator();
@@ -49,8 +43,6 @@ public class E16_6 {
             }
             iterator.next();
         }
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 12");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 12");
         System.out.println("size(): " + list.size() + ", expected: 12");
 
         //list = initializeLinkedList();
@@ -65,8 +57,6 @@ public class E16_6 {
                 iterator.remove();
             }
         }
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 8");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 8");
         System.out.println("size(): " + list.size() + ", expected: 8");
 
         iterator = list.listIterator();
@@ -80,8 +70,6 @@ public class E16_6 {
                 iterator.set("SET");
             }
         }
-        System.out.println("calculateSize(): " + list.calculateSize() + ", expected: 8");
-        System.out.println("getSizeRecursively(): " + list.getSizeRecursively() + ", expected: 8");
         System.out.println("size(): " + list.size() + ", expected: 8");
     }
 

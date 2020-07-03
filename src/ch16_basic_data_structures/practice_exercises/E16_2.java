@@ -1,3 +1,6 @@
+package ch16_basic_data_structures.practice_exercises;
+
+import ch16_basic_data_structures.chapter_examples.section1.LinkedList;
 /**
  * Consider a version of the LinkedList class of Section 16.1 in which the addFirst method has been replaced with the following
  * faulty version:
@@ -20,4 +23,8 @@
  */
 public class E16_2 {
     
+}
+
+class MyLinkedList extends LinkedList {
+
 }
