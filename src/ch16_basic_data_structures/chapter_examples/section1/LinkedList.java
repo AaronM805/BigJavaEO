@@ -283,8 +283,14 @@ public class LinkedList {
 		public Object data;
 		public Node next;
 
+		Node() {
+			next = null;
+			// this.data = null;
+		}
+
 		Node(Object data) {
 			this.data = data;
+			next = null;
 		}
 	}
 }
