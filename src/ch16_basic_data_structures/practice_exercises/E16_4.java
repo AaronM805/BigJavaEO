@@ -4,7 +4,7 @@ import ch16_basic_data_structures.chapter_examples.section1.LinkedList;
 import ch16_basic_data_structures.chapter_examples.section1.ListIterator;
 
 /**
- * Add a method size to our implementation of the LinkedList class that computes the number of elements in the list by following
+ * Add a method calculateSize to our implementation of the LinkedList class that computes the number of elements in the list by following
  * links and counting the elements until the end of the list is reached.
  * 
  * TIME: ~00:13:00

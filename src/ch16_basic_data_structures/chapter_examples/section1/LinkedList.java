@@ -44,6 +44,7 @@ public class LinkedList {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Adds an element to the end of the linked list.
 	 *
 	 * @param element the element to add
@@ -57,6 +58,22 @@ public class LinkedList {
 
 		Node newNode = new Node(element);
 		tmp.next = newNode;
+=======
+	 * Calculates the current size of the linked list by iterating over it. This is from Practice Exercise E16.4.
+	 *
+	 * @return the current size of the linked list
+	 */
+	public int calculateSize() {
+		int count = 0;
+
+		ListIterator iter = this.listIterator();
+
+		while(iter.hasNext()) {
+			iter.next();
+			count++;
+		}
+		return count;
+>>>>>>> Pushing completed practice exercises.
 	}
 
 	/**
@@ -74,6 +91,7 @@ public class LinkedList {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Gets the head of the linked list. This is not a correct implementation, but we just doing this to solve for Practice
 	 * Problem E16_5.
 	 *
@@ -81,6 +99,15 @@ public class LinkedList {
 	 */
 	public Node getHead() {
 		return head;
+=======
+	 * Gets the current size recursively. This is from Practice Exercise E16_5.
+	 *
+	 * @return the current size of the linked list.
+	 */
+	public int getSizeRecursively() {
+		Node start = head;
+		return size(start);
+>>>>>>> Pushing completed practice exercises.
 	}
 
 	/**
@@ -138,6 +165,19 @@ public class LinkedList {
 		sb.append("]");
 
 		return sb.toString();
+	}
+
+	private int size(Node start) {
+		/*
+		A B C D E F G
+		|
+		*/
+		if (start == null) {
+			return 0;
+		}
+		else {
+			return size(start.next) + 1;
+		}
 	}
 
 	class LinkedListIterator implements ListIterator {
@@ -229,7 +269,6 @@ public class LinkedList {
 				previous.next = position.next;
 				currentSize--;
 			}
-
 			position = previous;
 			isAfterNext = false;
 		}
