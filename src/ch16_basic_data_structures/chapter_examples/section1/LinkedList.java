@@ -43,23 +43,6 @@ public class LinkedList {
 	}
 
 	/**
-	 * Calculates the current size of the linked list by iterating over it. This is from Practice Exercise E16.4.
-	 *
-	 * @return the current size of the linked list
-	 */
-	public int calculateSize() {
-		int count = 0;
-
-		ListIterator iter = this.listIterator();
-
-		while(iter.hasNext()) {
-			iter.next();
-			count++;
-		}
-		return count;
-	}
-
-	/**
 	 * Gets the first node from the linked list.
 	 *
 	 * Returns the first element in the linked list.
@@ -74,13 +57,13 @@ public class LinkedList {
 	}
 
 	/**
-	 * Gets the current size recursively. This is from Practice Exercise E16_5.
+	 * Gets the head of the linked list. This is not a correct implementation, but we just doing this to solve for Practice
+	 * Problem E16_5.
 	 *
-	 * @return the current size of the linked list.
+	 * @return head of linked list
 	 */
-	public int getSizeRecursively() {
-		Node start = head;
-		return size(start);
+	public Node getHead() {
+		return head;
 	}
 
 	/**
@@ -138,19 +121,6 @@ public class LinkedList {
 		sb.append("]");
 
 		return sb.toString();
-	}
-
-	private int size(Node start) {
-		/*
-		A B C D E F G
-		|
-		*/
-		if (start == null) {
-			return 0;
-		}
-		else {
-			return size(start.next) + 1;
-		}
 	}
 
 	class LinkedListIterator implements ListIterator {
@@ -260,7 +230,12 @@ public class LinkedList {
 		}
 	}
 
-	class Node {
+	/**
+	 * A node is a concept used to store inforation for each linked list node. We are making this class public to solve for
+	 * Practice Exercise E16.5.
+	 *
+	 */
+	public class Node {
 		public Object data;
 		public Node next;
 

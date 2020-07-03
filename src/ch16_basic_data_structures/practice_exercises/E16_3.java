@@ -1,5 +1,5 @@
 /**
- * Consider a version of the LinkedList class of Section 16.1 in which the iterator’s has- Next method has been replaced with the
+ * Consider a version of the LinkedList class of Section 16.1 in which the iterator’s hasNext method has been replaced with the
  * following faulty version:
  *  public boolean hasNext() { return position != null; }
  *
