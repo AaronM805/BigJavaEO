@@ -25,6 +25,22 @@ public class LinkedListStack {
     }
 
     /**
+     * Gets the element from the top of the stack, without removing it.
+     *
+     * @return the element at the top of the stack
+     *
+     * @throws NoSuchElementException if stack is empty
+     */
+    public Object peek() {
+
+        if(head == null) {
+            thow new NoSuchElementException();
+        }
+
+        return head.data;
+    }
+
+    /**
      * Removes the element from the top of the stack.
      *
      * @return the removed element
