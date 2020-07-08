@@ -1,6 +1,5 @@
 package ch16_basic_data_structures.chapter_examples.section1;
 
-
 import java.util.NoSuchElementException;
 
 /**
@@ -59,23 +58,6 @@ public class LinkedList {
 		tmp.next = newNode;
 	}
 
-	/*
-	 * Calculates the current size of the linked list by iterating over it. This is from Practice Exercise E16.4.
-	 *
-	 * @return the current size of the linked list
-	 */
-	public int calculateSize() {
-		int count = 0;
-
-		ListIterator iter = this.listIterator();
-
-		while(iter.hasNext()) {
-			iter.next();
-			count++;
-		}
-		return count;
-	}
-
 	/**
 	 * Gets the first node from the linked list.
 	 *
@@ -98,16 +80,6 @@ public class LinkedList {
 	 */
 	public Node getHead() {
 		return head;
-	}
-
-	/*
-	 * Gets the current size recursively. This is from Practice Exercise E16_5.
-	 *
-	 * @return head of linked list
-	 */
-	public int getSizeRecursively() {
-		Node start = head;
-		return size(start);
 	}
 
 	/**
