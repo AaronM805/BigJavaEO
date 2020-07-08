@@ -67,8 +67,9 @@ public class E7_19 {
 		return largest;
 	}
 
-	private static int[] createGraph() {
-		return null;
-	}
+	// @Deprecated
+	// private static int[] createGraph() {
+	// 	return null;
+	// }
 
 }

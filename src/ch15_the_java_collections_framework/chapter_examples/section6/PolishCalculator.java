@@ -41,5 +41,6 @@ public class PolishCalculator {
             }
             System.out.println(results);
         }
+        in.close();
     }
 }

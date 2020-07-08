@@ -16,9 +16,7 @@ import java.util.Stack;
  *
  * Difficulty: Medium
  * 
- * TIME:
- * Time Complexity:
- * Space Complexity:
+ * TIME: 00:42:19
  */
 public class E15_8 {
     public static void main(String[] args) {
@@ -26,6 +24,16 @@ public class E15_8 {
         System.out.println(reverse(paragraph));
     }
 
+    /**
+     * Reverses the string on each sentence.
+     * 
+     * @param input the input to reverse
+     * 
+     * @return the reverse representation of input
+     * 
+     * Time Complexity: O(NM) - N number of sentences; M number of words in each sentence
+     * Space Complexity: O(N + M) - number of words N in each sentence M
+     */
     public static String reverse(String input) {
         /*
         split the string at every period and store into a sentence array
@@ -44,7 +52,7 @@ public class E15_8 {
         */
         Stack<String> stack = new Stack<>();
         StringBuilder sb = new StringBuilder();
-        String[] sentences = input.split(".");
+        String[] sentences = input.split("\\.");
 
         for(int i = 0; i < sentences.length; i++) {
             String[] words = sentences[i].trim().split(" ");
