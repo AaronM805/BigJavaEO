@@ -54,5 +54,4 @@ public class E15_9 {
 
         return sb.toString().trim();
     }
-    
 }
