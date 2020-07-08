@@ -34,7 +34,7 @@ public class LinkedListStack {
     public Object peek() {
 
         if(head == null) {
-            thow new NoSuchElementException();
+            throw new NoSuchElementException();
         }
 
         return head.data;

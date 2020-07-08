@@ -46,9 +46,9 @@ class Table {
 
 		double sum = 0;
 
-		if(row == 0) {
-			if(column)
-		}
+		// if(row == 0) {
+		// 	if(column)
+		// }
 
 		/*
 		[i - 1][j - 1] [i - 1][j] [i - 1][j + 1]

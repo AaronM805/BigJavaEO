@@ -35,6 +35,7 @@ public class E15_11 {
                 System.out.println(list.remove());
             }
         } while(!input.equalsIgnoreCase("quit"));
+        in.close();
     }
 
     private static void menu() {

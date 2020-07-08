@@ -1,4 +1,4 @@
-package ch16_basic_data_structures.chapter_examples;
+package ch16_basic_data_structures.chapter_examples.section1;
 
 /**
  * A list iterator allows access to a position in a linked list. This interface contains a subset of the methods of the standard

@@ -14,7 +14,7 @@ public class Palindromes {
 
 	public static boolean isIterativePalindrome(String text) {
 		int start = 0;
-		int end = text.length - 1;
+		int end = text.length() - 1;
 
 		while(start < end) {
 			char first = Character.toLowerCase(text.charAt(start));
@@ -30,11 +30,11 @@ public class Palindromes {
 				}
 			}
 
-			if(!Character.isletter(last)) {
+			if(!Character.isLetter(last)) {
 				end--;
 			}
 
-			if(!Character.isletter(start)) {
+			if(!Character.isLetter(start)) {
 				start++;
 			}
 		}

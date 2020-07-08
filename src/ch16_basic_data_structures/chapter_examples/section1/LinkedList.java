@@ -1,4 +1,4 @@
-package ch16_basic_data_structures.chapter_examples;
+package ch16_basic_data_structures.chapter_examples.section1;
 
 import java.util.NoSuchElementException;
 
@@ -47,7 +47,7 @@ public class LinkedList {
 	 * @return the first element in the linked list
 	 */
 	public Object getFirst() {
-		if(first == null) {
+		if(head == null) {
 			throw new NoSuchElementException();
 		}
 		return head.data;
