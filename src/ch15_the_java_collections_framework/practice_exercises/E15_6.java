@@ -11,6 +11,6 @@ package ch15_the_java_collections_framework.practice_exercises;
  * Time Complexity:
  * Space Complexity:
  */
-public class E15.6 {
+public class E15_6 {
     
 }

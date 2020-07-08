@@ -65,7 +65,7 @@ public class LinkedList {
 	 * @return the first element in the linked list
 	 */
 	public Object getFirst() {
-		if(first == null) {
+		if(head == null) {
 			throw new NoSuchElementException();
 		}
 		return head.data;

@@ -1,5 +1,7 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
+import java.util.Scanner;
+
 /**
  * Difficulty: Hard
  * 
@@ -65,6 +67,8 @@ public class E7_19 {
 		return largest;
 	}
 
-	private static int[] createGraph()
+	private static int[] createGraph() {
+		return null;
+	}
 
 }

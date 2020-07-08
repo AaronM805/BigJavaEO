@@ -72,7 +72,7 @@ public class CircularArrayQueue {
             Object[] tmp = new Object[data.length * 2];
 
             for(int i = 0; i < data.length; i++) {
-                tmp[i] = data[(head + i) % elements.length];
+                tmp[i] = data[(head + i) % data.length];
             }
 
             data = tmp;

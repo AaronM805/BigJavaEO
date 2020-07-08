@@ -11,6 +11,6 @@ package ch8_designing_classes.practice_exercises;
  * Time Complexity:
  * Space Complexity:
  */
-public class E8_22 {
+public class E8_23 {
     
 }
