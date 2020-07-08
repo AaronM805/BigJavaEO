@@ -9,11 +9,12 @@ import java.util.NoSuchElementException;
  * of the standard java.util.LinkedList class.
  *
  * @author Aaron Martinez
- * @version 0.1
+ * @version 0.2
  */
 public class LinkedList {
 
 	private Node head;
+	private int currentSize;
 	// may or may not be provided in other implemenations.
 	// private Node tail;
 
@@ -24,6 +25,7 @@ public class LinkedList {
 	 */
 	public LinkedList() {
 		head = null;
+		currentSize = 0;
 	}
 
 	/**
@@ -37,6 +39,23 @@ public class LinkedList {
 		Node newNode = new Node(element);
 		newNode.next = head;
 		head = newNode;
+		currentSize++;
+	}
+
+	/**
+	 * Adds an element to the end of the linked list.
+	 *
+	 * @param element the element to add
+	 */
+	public void addLast(Object element) {
+		Node tmp = head;
+
+		while(tmp.next != null) {
+			tmp = tmp.next;
+		}
+
+		Node newNode = new Node(element);
+		tmp.next = newNode;
 	}
 
 	/**
@@ -51,6 +70,16 @@ public class LinkedList {
 			throw new NoSuchElementException();
 		}
 		return head.data;
+	}
+
+	/**
+	 * Gets the head of the linked list. This is not a correct implementation, but we just doing this to solve for Practice
+	 * Problem E16_5.
+	 *
+	 * @return head of linked list
+	 */
+	public Node getHead() {
+		return head;
 	}
 
 	/**
@@ -76,8 +105,38 @@ public class LinkedList {
 
 		Object element = head.data;
 		head = head.next;
+		currentSize--;
 
 		return element;
+	}
+
+	/**
+	 * Gets the current size of this linked list.
+	 *
+	 * @return this size
+	 */
+	public int size() {
+		return currentSize;
+	}
+
+	/**
+	 * Gets the string representation of this linked list.
+	 *
+	 * @return current representation of this linked list
+	 */
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		ListIterator iter = this.listIterator();
+
+		sb.append("[");
+		while(iter.hasNext()) {
+			Object next = iter.next();
+			String delimiter = iter.hasNext() ? ", " : "";
+			sb.append(next).append(delimiter);
+		}
+		sb.append("]");
+
+		return sb.toString();
 	}
 
 	class LinkedListIterator implements ListIterator {
@@ -113,6 +172,7 @@ public class LinkedList {
 				position = newNode;
 			}
 			isAfterNext = false;
+			currentSize++;
 		}
 
 		/**
@@ -166,8 +226,8 @@ public class LinkedList {
 			}
 			else {
 				previous.next = position.next;
+				currentSize--;
 			}
-
 			position = previous;
 			isAfterNext = false;
 		}
@@ -186,12 +246,23 @@ public class LinkedList {
 		}
 	}
 
-	class Node {
+	/**
+	 * A node is a concept used to store inforation for each linked list node. We are making this class public to solve for
+	 * Practice Exercise E16.5.
+	 *
+	 */
+	public class Node {
 		public Object data;
 		public Node next;
 
+		Node() {
+			next = null;
+			// this.data = null;
+		}
+
 		Node(Object data) {
 			this.data = data;
+			next = null;
 		}
 	}
 }
