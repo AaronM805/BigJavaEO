@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import ch14_sorting_and_searching.chapter_examples.section1.SelectionSorter;
 import utils.ArrayUtil;
+import utils.StopWatch;
 
 /**
  * This program measures how long it takes to sort an array of user-specified size with the selection sort algorithm.

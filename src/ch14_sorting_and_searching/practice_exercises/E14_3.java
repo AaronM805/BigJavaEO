@@ -3,8 +3,8 @@ package ch14_sorting_and_searching.practice_exercises;
 import java.util.Scanner;
 
 import ch14_sorting_and_searching.chapter_examples.section1.SelectionSorter;
-import ch14_sorting_and_searching.chapter_examples.section2.StopWatch;
 import utils.ArrayUtil;
+import utils.StopWatch;
 
 public class E14_3 {
     public static void main(String[] args) {
