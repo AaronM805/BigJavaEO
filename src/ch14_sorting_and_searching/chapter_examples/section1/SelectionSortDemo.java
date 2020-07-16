@@ -10,8 +10,15 @@ import utils.ArrayUtil;
 public class SelectionSortDemo {
     public static void main(String[] args) {
         int[] a = ArrayUtil.randomIntArray(20, 100);
+        System.out.println("Using SelectionSorter");
         System.out.println(Arrays.toString(a));
         SelectionSorter.sort(a);
+        System.out.println(Arrays.toString(a));
+
+        a = ArrayUtil.randomIntArray(20, 100);
+        System.out.println("Using SelectionSort");
+        System.out.println(Arrays.toString(a));
+        SelectionSort.sort(a);
         System.out.println(Arrays.toString(a));
     }
 }

@@ -1,10 +1,6 @@
-<<<<<<< HEAD:src/ch16_basic_data_structures/self_check/LinkedList.java
 package ch16_basic_data_structures.self_check;
 
 import ch16_basic_data_structures.chapter_examples.section1.ListIterator;
-=======
-package ch16_basic_data_structures.chapter_examples.section1;
->>>>>>> Updated chapter examples.:src/ch16_basic_data_structures/chapter_examples/section1/LinkedList.java
 
 import java.util.NoSuchElementException;
 
@@ -109,11 +105,11 @@ public class LinkedList {
 		sb.append("[");
 		while(iter.hasNext()) {
 			String delimiter = iter.hasNext() ? ", " : "";
-			sb.append(iter.next).append(delimiter);
+			sb.append(iter.next()).append(delimiter);
 		}
 		sb.append("]");
 
-		sb.toString();
+		return sb.toString();
 	}
 
 	class LinkedListIterator implements ListIterator {

@@ -1,4 +1,4 @@
-package ch14_sorting_and_searching.chapter_examples.section2;
+package utils;
 
 /**
  * A stopwatch accumulates time when it is running. You can repeatedly start and stop the stopwatch. You can use a stopwatch to
