@@ -44,6 +44,6 @@ public class Coin {
 
    @Override
    public String toString() {
-       return "Coin [name=" + name + ", value=" + value + "]";
+       return "Coin[name=" + name + ", value=" + value + "]";
    }
 }
