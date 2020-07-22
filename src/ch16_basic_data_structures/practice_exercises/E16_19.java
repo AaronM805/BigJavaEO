@@ -1,3 +1,4 @@
+package ch16_basic_data_structures.practice_exercises;
 /**
  * Implement the remove operation for iterators on the hash set in Section 16.4.
  * 

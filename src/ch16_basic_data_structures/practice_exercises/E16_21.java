@@ -1,3 +1,4 @@
+package ch16_basic_data_structures.practice_exercises;
 /**
  * Add methods to count collisions to the hash set in Section 16.4 and the one in Exercise E16.20. Insert all words from a
  * dictionary (in /usr/share/dict/words or in words.txt in your companion code) into both hash set implementations. Does the MAD

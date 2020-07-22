@@ -1,3 +1,4 @@
+package ch16_basic_data_structures.practice_exercises;
 /**
  * Consider a version of the LinkedList class of Section 16.1 in which the iterator’s hasNext method has been replaced with the
  * following faulty version:

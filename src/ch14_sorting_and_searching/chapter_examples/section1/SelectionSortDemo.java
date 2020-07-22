@@ -18,7 +18,7 @@ public class SelectionSortDemo {
         a = ArrayUtil.randomIntArray(20, 100);
         System.out.println("Using SelectionSort");
         System.out.println(Arrays.toString(a));
-        SelectionSort.sort(a);
+        SelectionSort.sort(a, true);
         System.out.println(Arrays.toString(a));
     }
 }

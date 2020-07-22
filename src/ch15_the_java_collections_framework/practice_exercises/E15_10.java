@@ -35,6 +35,7 @@ public class E15_10 {
             }
             
         }while (value != 0);
+        input.close();
     }
 }
 

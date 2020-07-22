@@ -37,7 +37,7 @@ public class SelectionSortTimer {
         timer = new StopWatch();
 
         timer.start();
-        SelectionSort.sort(a);
+        SelectionSort.sort(a, true);
         timer.stop();
 
         System.out.println("Elapsed time: " + timer.getElapsedTime() + " ms");
