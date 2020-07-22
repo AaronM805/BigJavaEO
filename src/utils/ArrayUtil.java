@@ -2,7 +2,7 @@ package utils;
 
 import java.util.Random;
 
-import ch14_sorting_and_searching.practice_exercises.Coin;
+import ch14_sorting_and_searching.practice_exercises.pojo.Coin;
 
 /**
    This class contains utility methods for array manipulation.

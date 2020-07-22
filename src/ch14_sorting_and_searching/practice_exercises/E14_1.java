@@ -9,6 +9,9 @@ import utils.ArrayUtil;
 /**
  * Modify the selection sort algorithm to sort an array of intergers in descending order.
  */
+/**
+ * Difficulty: Easy
+ */
 public class E14_1 {
     public static void main(String[] args) {
         int[] values = ArrayUtil.randomIntArray(100, 300);
