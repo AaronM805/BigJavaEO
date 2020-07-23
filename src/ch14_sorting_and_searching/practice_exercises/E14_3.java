@@ -2,10 +2,17 @@ package ch14_sorting_and_searching.practice_exercises;
 
 import java.util.Scanner;
 
-import ch14_sorting_and_searching.chapter_examples.section1.SelectionSorter;
+import ch14_sorting_and_searching.chapter_examples.section1.SelectionSort;
 import utils.ArrayUtil;
 import utils.StopWatch;
 
+/**
+ * Write a program that automatically generates the table of sample run times for the selection sort algorithm. The program
+ * should ask for the smallest and largest value of n and the number of measurements and then take all sample runs.
+ */
+/**
+ * Difficulty: Medium
+ */
 public class E14_3 {
     public static void main(String[] args) {
         
@@ -29,7 +36,7 @@ public class E14_3 {
             if(idx != minVal && idx % interval == 0) {
                 int[] a = ArrayUtil.randomIntArray(idx, idx);
                 timer.start();
-                SelectionSorter.sort(a);
+                SelectionSort.sort(a, true);
                 timer.stop();
                 
                 System.out.printf("\n%-10d%-10s",idx, timer.getElapsedTime());
