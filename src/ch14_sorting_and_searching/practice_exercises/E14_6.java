@@ -1,7 +1,7 @@
 package ch14_sorting_and_searching.practice_exercises;
 
 /**
- * Modify the selection sorg algorithm to sort an array of objects that implement the Comparable interface (without a type
+ * Modify the selection sort algorithm to sort an array of objects that implement the Comparable interface (without a type
  * parameter).
  *
  * TIME:

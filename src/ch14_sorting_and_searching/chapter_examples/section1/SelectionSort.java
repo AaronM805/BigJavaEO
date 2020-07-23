@@ -1,5 +1,6 @@
 package ch14_sorting_and_searching.chapter_examples.section1;
 
+import ch10_interfaces.chapter_examples.section1.Measurable;
 import ch14_sorting_and_searching.practice_exercises.pojo.Coin;
 import utils.ArrayUtil;
 /**
@@ -33,16 +34,31 @@ public class SelectionSort {
             ArrayUtil.swap(coins, minPos, i);
         }
     }
-    
 
     /**
-     * Finds the smallest element in array and returns it's position. Finds the smallest element in a tail range of the array.
+     * Sorts an array, using selection sort, of measurable type.
+     *
+     * @param data the array to sort
+     *
+     * Time Complexity: O(n^2)
+     * Space Complexity: O(1)
+     */
+    public static void sort(Measurable[] data) {
+        for (int i = 0; i < data.length - 1; i++) {
+            int minPos = findMinIndex(data, i);
+            ArrayUtil.swap(data, minPos, i);
+        }
+    }
+
+    /**
+     * Finds the smallest, or largest element in array and returns it's position. Finds the smallest, or largest, element in a
+     * tail range of the array.
      * 
      * @param data the array to look for smallest position
      * @param index the current index. (from) the first position in data to compare.
      * @param ascOrder flag indicating whether to sort data in ascending order, or descending order
      *
-     * @return the position of smallest element. The position of the smallest element in the range from data[from] ...
+     * @return the position of smallest, or largest, element. The position of the smallest element in the range from data[from] ...
      *         data[data.length - 1].
      */
     private static int findIndex(int[] data, int index, boolean ascOrder) {
@@ -56,17 +72,36 @@ public class SelectionSort {
     }
 
     /**
-     * Finds the largest element in a tail range of the array.
+     * Finds the smallest element in a tail range of the array.
      *
      * @param a the array to sort
-     * @param from the first position in a to compare
+     * @param from the first position in coins to compare
      *
-     * @return the position of the largest element in the range coins[from] . . . coins[a.length - 1]
+     * @return the position of the smallest element in the range coins[from] . . . coins[a.length - 1]
      */
     private static int findMinIndex(Coin[] coins, int from) {
         int minPos = from;
         for (int i = from + 1; i < coins.length; i++) {
-            if (coins[i].getValue() < coins[minPos].getValue()) {
+            if (Double.compare(coins[i].getValue(), coins[minPos].getValue()) < 0) {
+                minPos = i;
+            }
+        }
+        return minPos;
+    }
+
+    /**
+     * Finds the smallest element index in the tail range of the array
+     *
+     * @param data the array to search
+     * @param from the first position in data to compare
+     *
+     * @return the position of the smallest element in the range data[from] ... data[a.length - 1]
+     */
+    private static int findMinIndex(Measurable[] data, int from) {
+        int minPos = from;
+
+        for(int i = from + 1; i < data.length; i++) {
+            if(Double.compare(data[i].getMeasure(), data[minPos].getMeasure()) < 0) {
                 minPos = i;
             }
         }
