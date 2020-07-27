@@ -25,6 +25,11 @@ public class BankAccount implements Measurable, Comparable {
       balance = initialBalance;
    }
 
+   // TODO: Implement
+   public int compareTo(BankAccount other) {
+      return 0;
+   }
+
    /**
       Deposits money into the bank account.
       @param amount the amount to deposit
