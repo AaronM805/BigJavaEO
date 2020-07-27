@@ -5,7 +5,7 @@ import java.util.Formatter;
 /**
  * A bank account has a balance that can be changed by deposits and withdrawals
  */
-public class BankAccount implements Measurable {
+public class BankAccount implements Measurable, Comparable {
     private double balance;
 
     /**
