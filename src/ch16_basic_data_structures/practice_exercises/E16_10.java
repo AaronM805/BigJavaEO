@@ -1,3 +1,4 @@
+package ch16_basic_data_structures.practice_exercises;
 /**
  * Provide a removeLast method for the ArrayList implementation in Section 16.2 that shrinks the internal array by 50 percent
  * when it is less than 25 percent full.

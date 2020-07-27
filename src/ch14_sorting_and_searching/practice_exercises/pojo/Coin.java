@@ -1,10 +1,9 @@
-package ch14_sorting_and_searching.practice_exercises;
+package ch14_sorting_and_searching.practice_exercises.pojo;
 
 /**
    A coin with a monetary value.
 */
-public class Coin
-{
+public class Coin {
    private double value;
    private String name;
 
@@ -37,7 +36,7 @@ public class Coin
       return name;
    }
 
-   /*
+   /**
     * (non-Javadoc)
     * 
     * @see java.lang.Object#toString()
@@ -45,6 +44,6 @@ public class Coin
 
    @Override
    public String toString() {
-       return "Coin [name=" + name + ", value=" + value + "]";
+       return "Coin[name=" + name + ", value=" + value + "]";
    }
 }
