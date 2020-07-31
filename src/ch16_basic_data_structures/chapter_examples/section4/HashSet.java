@@ -13,14 +13,16 @@ import java.util.NoSuchElementException;
 public class HashSet {
     private Node[] buckets;
     private int size;
+    private boolean madCompression;
 
     /**
      * Constructs a hash table.
      *
      * @param bucketsLength the length of the buckets array
      */
-    public HashSet(int bucketsLength) {
+    public HashSet(int bucketsLength, boolean madCompression) {
         buckets = new Node[bucketsLength];
+        this.madCompression = madCompression;
         size = 0;
     }
 
@@ -184,6 +186,7 @@ public class HashSet {
             // if current is at the end of the bucket, we search for the next bucket that is not empty.
             for(int i = bucketIndex + 1; i < buckets.length; i++) {
                 if (buckets[i] != null) {
+                    bucketIndex = i;
                     return true;
                 }
             }
@@ -204,14 +207,11 @@ public class HashSet {
                 current = current.next;
             }
             // there are no more elements in bucket, find the next bucket w/ elements
+            else if (bucketIndex == buckets.length) {
+                throw new NoSuchElementException();
+            }
             else {
-                do {
-                    bucketIndex++;
-                    if(bucketIndex == buckets.length) {
-                        throw new NoSuchElementException();
-                    }
-                    current = buckets[bucketIndex];
-                }while (current == null);
+                current = buckets[bucketIndex];
             }
             return current.data;
         }
