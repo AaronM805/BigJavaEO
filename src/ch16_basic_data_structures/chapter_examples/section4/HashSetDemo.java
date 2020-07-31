@@ -9,32 +9,32 @@ public class HashSetDemo {
     public static void main(String[] args) {
         HashSet names = new HashSet(50);
 
-        names.add("Aaron");
-        names.add("Ugh");
-        names.add("Andrea");
-        names.add("Cynthia");
-        names.add("cynthia");
-        names.add("Mari");
-        names.add("Danny");
-        names.add("Ana");
-        names.add("Marisela");
-        names.add("Gabriela");
-        names.add("Jose Aaron");
-        names.add("Harry");
-        names.add("Sue");
-        names.add("Nina");
-        names.add("Susannah");
-        names.add("Larry");
-        names.add("Eve");
-        names.add("Sarah");
-        names.add("Adam");
-        names.add("Tony");
-        names.add("Katherine");
-        names.add("Juliet");
-        names.add("Romeo");
-        names.add("Romeo");
-        names.add("George");
-        names.add("VII");
+        names.add("Aaron", false);
+        names.add("Ugh", false);
+        names.add("Andrea", false);
+        names.add("Cynthia", false);
+        names.add("cynthia", false);
+        names.add("Mari", false);
+        names.add("Danny", false);
+        names.add("Ana", false);
+        names.add("Marisela", false);
+        names.add("Gabriela", false);
+        names.add("Jose Aaron", false);
+        names.add("Harry", false);
+        names.add("Sue", false);
+        names.add("Nina", false);
+        names.add("Susannah", false);
+        names.add("Larry", false);
+        names.add("Eve", false);
+        names.add("Sarah", false);
+        names.add("Adam", false);
+        names.add("Tony", false);
+        names.add("Katherine", false);
+        names.add("Juliet", false);
+        names.add("Romeo", false);
+        names.add("Romeo", false);
+        names.add("George", false);
+        names.add("VII", false);
 
         System.out.println(names);
 
