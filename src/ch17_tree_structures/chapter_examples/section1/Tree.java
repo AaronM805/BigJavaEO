@@ -101,7 +101,8 @@ public class Tree {
         }
 
         public String toString() {
-            return "Node[data=" + data + ", children=" + children.toString() + "]";
+            // return "Node[data=" + data + ", children=" + children.toString() + "]";
+            return data + ", children=" + children.toString();
         }
 
         private int leaves(Node node) {
