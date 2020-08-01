@@ -29,6 +29,15 @@ public class Tree {
     }
 
     /**
+     * Returns the number of leaves that this tree has.
+     *
+     * @return number of leaves of this tree
+     */
+    public int leaves() {
+        return root.leaves();
+    }
+
+    /**
      * Returns the size of the tree.
      *
      * @return size of tree
@@ -65,6 +74,20 @@ public class Tree {
         }
 
         /**
+         * Calculates the number of leaves that this node has.
+         *
+         * @return number of leaves
+         */
+        public int leaves() {
+            int sum = 0;
+
+            for(Node child : children) {
+                sum += leaves(child);
+            }
+            return sum;
+        }
+
+        /**
          * Calculates the size of this node and all of it's children nodes.
          *
          * @return size of collection
@@ -79,6 +102,17 @@ public class Tree {
 
         public String toString() {
             return "Node[data=" + data + ", children=" + children.toString() + "]";
+        }
+
+        private int leaves(Node node) {
+            if (node.children == null || node.children.size() == 0) {
+                return 1;
+            }
+            int sum = 0;
+            for (Node child : node.children) {
+                sum += leaves(child);
+            }
+            return sum;
         }
     }
 }

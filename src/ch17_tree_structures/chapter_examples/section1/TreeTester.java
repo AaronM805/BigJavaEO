@@ -35,5 +35,6 @@ public class TreeTester {
                     /   /  |  \   \
                    7   8   9   10  11
         */
+        System.out.println("# of leaves:" + tree.leaves() + ", expected: 10");
     }
 }
