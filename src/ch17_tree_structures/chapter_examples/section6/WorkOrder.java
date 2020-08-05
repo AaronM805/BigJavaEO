@@ -41,10 +41,10 @@ public class WorkOrder implements Comparable {
     public int compareTo(Object other) {
         WorkOrder order = (WorkOrder) other;
 
-        if(this.priority < other.priority) {
+        if(this.priority < order.priority) {
             return -1;
         }
-        else if(this.priority > other.priority) {
+        else if(this.priority > order.priority) {
             return 1;
         }
         else {
