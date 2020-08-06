@@ -26,7 +26,7 @@ public class BankAccount implements Measurable, Comparable {
    }
 
    // TODO: Implement
-   public int compareTo(BankAccount other) {
+   public int compareTo(Object other) {
       return 0;
    }
 
