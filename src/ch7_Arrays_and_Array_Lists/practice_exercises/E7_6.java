@@ -9,7 +9,7 @@ public class E7_6 {
         int[] numbers = {1, 4, 9, 16, 9, 7, 4, 9, 11};
 
         System.out.println(Arrays.toString(numbers));
-        numbers = reverseArray(numbers);
+        reverseArray(numbers);
         System.out.println(Arrays.toString(numbers));
     }
 
@@ -24,13 +24,13 @@ public class E7_6 {
         Time complexity: O(N)
         Space complexity: O(1) no new space is used for this
     */
-    public static int[] reverseArray(int[] arr) {
+    public static void reverseArray(int[] arr) {
 		for(int idx = 0; idx < arr.length / 2; idx++) {
 			int pos = arr.length  - 1 - idx;
 			int temp = arr[idx];
 			arr[idx] = arr[pos];
 			arr[pos] = temp;
         }
-        return arr;
+        // return arr;
     }
 }
