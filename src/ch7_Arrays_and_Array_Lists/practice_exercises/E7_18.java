@@ -45,7 +45,7 @@ public class E7_18 {
 	}
 
 	/*
-	 * Time Complexity: O(N^2)
+	 * Time Complexity: O(N*C) - # of values in array; # of asteriks drawn
  	 * Space Complexity: O(1)
 	 */
 	public static void drawGraph(int[] array) {
