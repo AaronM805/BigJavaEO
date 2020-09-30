@@ -38,7 +38,7 @@ public class ArraySequence {
      *
      * @return true if this sequence and other are the same sequence, false otherwise.
      */
-    public boolean equals(Sequence other) {
+    public boolean equals(ArraySequence other) {
         if(this.size() != other.size()) {
             return false;
         }
@@ -64,7 +64,7 @@ public class ArraySequence {
      *
      * @return true if this and other sequence have the same values, otherwise false.
      */
-    public boolean sameValues(Sequence other) {
+    public boolean sameValues(ArraySequence other) {
         Set<Integer> set = getSetOfValues();
         for(int i = 0; i < other.size(); i++) {
             if(!set.contains(other.get(i))) {
@@ -90,9 +90,9 @@ public class ArraySequence {
      * @return the new sequence that contains the sum of this and other sequence.
      *
      */
-    public Sequence sum(Sequence other) {
+    public ArraySequence sum(ArraySequence other) {
         int size = Math.max(this.size(), other.size());
-        Sequence sequence = new Sequence(size);
+        ArraySequence sequence = new ArraySequence(size);
 
         int i = 0;
         int j = 0;
