@@ -15,7 +15,7 @@ public class E7_14 {
 		System.out.println("Sequence 1: " + seq1);
 		System.out.println("Sequence 2: " + seq2);
 
-		Sequence sum = seq1.sum(seq2);
+		ArraySequence sum = seq1.sum(seq2);
 		System.out.println("Sum: " + sum);
 
 		sum = seq2.sum(seq1);

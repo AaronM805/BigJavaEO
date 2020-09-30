@@ -19,7 +19,7 @@ public class E7_12 {
 		System.out.println("seq2: " + seq2);
 		System.out.println("Expected: true\tActual: " + seq1.sameValues(seq2));
 
-		Sequence seq3 = new Sequence(10);
+		ArraySequence seq3 = new ArraySequence(10);
 
 		fill(seq3, ArrayUtil.randomIntArray(15, 100));
 		System.out.println("seq1: " + seq1);
