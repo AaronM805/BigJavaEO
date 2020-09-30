@@ -5,14 +5,14 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Sequence {
+public class ArraySequence {
     private int[] values;
 
-    public Sequence(int size) {
+    public ArraySequence(int size) {
         values = new int[size];
     }
 
-    public Sequence(int[] vals) {
+    public ArraySequence(int[] vals) {
         values = vals;
     }
     

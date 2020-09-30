@@ -1,13 +1,13 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.Sequence;
+import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.ArraySequence;
 import java.util.Arrays;
 import java.util.Random;
 
 public class E7_14 {
 	public static void main(String[] args) {
-		Sequence seq1 = new Sequence(13);
-		Sequence seq2 = new Sequence(8);
+		ArraySequence seq1 = new ArraySequence(13);
+		ArraySequence seq2 = new ArraySequence(8);
 		
 		fill(seq1);
 		fill(seq2);
@@ -22,7 +22,7 @@ public class E7_14 {
 		System.out.println("Sum: " + sum);
 	}
 
-	public static void fill(Sequence seq) {
+	public static void fill(ArraySequence seq) {
 		Random random = new Random();
 
 		for(int i = 0; i < seq.size(); i++) {

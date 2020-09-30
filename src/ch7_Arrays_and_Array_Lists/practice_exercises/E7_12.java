@@ -1,13 +1,13 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.Sequence;
+import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.ArraySequence;
 
 import utils.ArrayUtil;
 
 public class E7_12 {
 	public static void main(String[] args) {
-		Sequence seq1 = new Sequence(10);
-		Sequence seq2 = new Sequence(7);
+		ArraySequence seq1 = new ArraySequence(10);
+		ArraySequence seq2 = new ArraySequence(7);
 
 		int[] tmp = {1, 4, 9, 16, 9, 7, 4, 9, 11, 1};
 		fill(seq1, tmp);
@@ -35,7 +35,7 @@ public class E7_12 {
 		
 	}
 
-	private static void fill(Sequence dest, int[] src) {
+	private static void fill(ArraySequence dest, int[] src) {
 		for(int i = 0; i < dest.size(); i++) {
 			dest.set(i, src[i]);
 		}

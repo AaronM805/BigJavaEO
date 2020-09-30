@@ -1,11 +1,11 @@
 package ch7_Arrays_and_Array_Lists.practice_exercises;
 
-import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.Sequence;
+import ch7_Arrays_and_Array_Lists.practice_exercises.pojo.ArraySequence;
 public class E7_11 {
     public static void main(String[] args) {
         int[] identical = {1, 2, 3, 4, 5, 6, 7};
-        Sequence s1 = new Sequence(identical);
-        Sequence s2 = new Sequence(identical);
+        ArraySequence s1 = new ArraySequence(identical);
+        ArraySequence s2 = new ArraySequence(identical);
         System.out.println("Are s1 and s2 identical? " + s1.equals(s2));
         System.out.println("expected: true");
 
