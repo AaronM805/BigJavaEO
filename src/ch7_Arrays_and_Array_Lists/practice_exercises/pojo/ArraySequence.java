@@ -2,7 +2,10 @@ package ch7_Arrays_and_Array_Lists.practice_exercises.pojo;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class ArraySequence {
@@ -45,6 +48,38 @@ public class ArraySequence {
 
         for(int i = 0; i < this.size(); i++) {
             if(this.get(i) != other.get(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /*
+     * Problem E7.13
+     * Difficulty: Hard
+     *
+     * TIME: 00:44:52
+     * Time Complexity: O(N)
+     * Space Complexity: O(N + M)
+     */
+    /**
+     * This method returns true if this sequence and other sequence have the same value in some order, with the same
+     * multiplicities. For example, 1 4 9 16 9 7 4 9 11 is a permutation of 11 1 4 9 16 9 7 4 9 but 1 4 9 16 9 7 4 9 11
+     * is not a permutation of 11 1 4 9 16 9 7 4 9.
+     *
+     * You will probably need one or more helper methods.
+     *
+     * @param other - the other sequence to compare against
+     *
+     * @return true if this sequence is a permutation and has the same multiplicity of the other sequece, otherwise return false
+     */
+    public boolean isPermutationOf(ArraySequence other) {
+        // To check if it's a permutation w/ multiplicity, use map to store Key Value number - count
+        Map<Integer, Integer> thisMap = convertToMap(this);
+        Map<Integer, Integer> otherMap = convertToMap(other);
+
+        for(Map.Entry<Integer, Integer> entry : thisMap.entrySet()) {
+            if(!otherMap.containsKey(entry.getKey()) || otherMap.get(entry.getKey()) != entry.getValue()) {
                 return false;
             }
         }
@@ -123,6 +158,21 @@ public class ArraySequence {
 
     public String toString() {
         return Arrays.toString(values);
+    }
+
+    private Map<Integer, Integer> convertToMap(ArraySequence sequence) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for(int i = 0; i < sequence.size(); i++) {
+            int key = sequence.get(i);
+            if(!map.containsKey(key)) {
+                map.put(key, 1);
+            }
+            else {
+                map.put(key, map.get(key) + 1);
+            }
+        }
+        return map;
     }
 
     private Set<Integer> getSetOfValues() {
