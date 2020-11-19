@@ -11,7 +11,7 @@
   **c. q.addChoice(choice, true)  
   **d. cq.addChoice(choice, true)  
 **7. Suppose the class Employee is declared as follows:
-  **```java
+  ```java
   public class Employee {
     private String name; private double baseSalary;
     public void setName(String newName) { . . . }
