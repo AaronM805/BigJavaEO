@@ -17,14 +17,14 @@
   c. q.addChoice(choice, true)  
   d. cq.addChoice(choice, true)  
 7. Suppose the class Employee is declared as follows:
-   ```java
-  public class Employee {
+```java
+   public class Employee {
     private String name; private double baseSalary;
     public void setName(String newName) { . . . }
     public void setBaseSalary(double newSalary) { . . . } public String getName() { . . . }
     public double getSalary() { . . . }
-  }
-   ```
+   }
+```
   Declare a class Manager that inherits from the class Employee and adds an instance variable bonus for storing a salary bonus. Omit constructors and methods.  
 8. Which instance variables does the Manager class from Self Check 7 have?  
 9. In the Manager class, provide the method header (but not the implementation) for a method that overrides the getSalary method from the class Employee.  
