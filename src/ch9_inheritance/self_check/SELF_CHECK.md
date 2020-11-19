@@ -59,4 +59,4 @@ public class Manager extends Employee {
 
 10. Which methods does the Manager class from Self Check 9 inherit?
 
-   The **Manager** class inherits the following methods: ***setName***, ***setBaseSalary***
+   The **Manager** class inherits the following methods: ***setName***, ***setBaseSalary***   
