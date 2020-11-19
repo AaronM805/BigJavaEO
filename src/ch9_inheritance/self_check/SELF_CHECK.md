@@ -6,10 +6,10 @@
 **4. Consider the method doSomething(Car c). List all vehicle classes from Figure 1 whose objects cannot be passed to this method.**
 **5. Should a class Quiz inherit from the class Question? Why or why not?**
 **6. Suppose q is an object of the class Question and cq an object of the class Choice­ Question. Which of the following calls are legal?**  
-  **a. q.setAnswer(response)**  
-  **b. cq.setAnswer(response)**  
-  **c. q.addChoice(choice, true)**  
-  **d. cq.addChoice(choice, true)**  
+**  a. q.setAnswer(response)**  
+**  b. cq.setAnswer(response)**  
+**  c. q.addChoice(choice, true)**  
+**  d. cq.addChoice(choice, true)**  
 **7. Suppose the class Employee is declared as follows:**
   ```java
   public class Employee {
