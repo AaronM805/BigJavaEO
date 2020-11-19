@@ -25,7 +25,7 @@ public class Employee {
   public double getSalary() { . . . }
 }
 ```
-   Declare a class Manager that inherits from the class Employee and adds an instance variable bonus for storing a salary bonus. Omit constructors and methods.  
+   Declare a class Manager that inherits from the class Employee and adds an instance variable bonus for storing a salary bonus. Omit constructors and methods.
 8. Which instance variables does the Manager class from Self Check 7 have?  
 9. In the Manager class, provide the method header (but not the implementation) for a method that overrides the getSalary method from the class Employee.  
 10. Which methods does the Manager class from Self Check 9 inherit?
