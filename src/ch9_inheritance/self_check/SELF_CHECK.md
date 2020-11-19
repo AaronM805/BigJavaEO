@@ -6,7 +6,7 @@
 
 2. What are the inheritance relationships between classes BankAccount, Checking­ Account, and SavingsAccount?
 
-  CheckingAccount and SavingsAccount are subclasses of superclass BankAccount. These are two types of bank accounts.  
+   CheckingAccount and SavingsAccount are subclasses of superclass BankAccount. These are two types of bank accounts.  
 
 3. What are all the superclasses of the JFrame class? Consult the Java API documen- tation or Appendix D.
 4. Consider the method doSomething(Car c). List all vehicle classes from Figure 1 whose objects cannot be passed to this method.
