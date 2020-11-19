@@ -48,6 +48,5 @@ public class Question {
      */
     public void display() {
         System.out.println(text);
-        
     }
 }
