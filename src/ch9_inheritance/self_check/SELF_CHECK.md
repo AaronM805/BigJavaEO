@@ -2,7 +2,7 @@
 
 1. Consider classes Manager and Employee. Which should be the superclass and which should be the subclass?
 
-  Manager should be the subclass and Employee should be the superclass. A manager is a type of employee.  
+   Manager should be the subclass and Employee should be the superclass. A manager is a type of employee.
 
 2. What are the inheritance relationships between classes BankAccount, Checking­ Account, and SavingsAccount?
 
