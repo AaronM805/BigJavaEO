@@ -18,12 +18,12 @@
   d. cq.addChoice(choice, true)  
 7. Suppose the class Employee is declared as follows:
 ```java
-   public class Employee {
-    private String name; private double baseSalary;
-    public void setName(String newName) { . . . }
-    public void setBaseSalary(double newSalary) { . . . } public String getName() { . . . }
-    public double getSalary() { . . . }
-   }
+public class Employee {
+  private String name; private double baseSalary;
+  public void setName(String newName) { . . . }
+  public void setBaseSalary(double newSalary) { . . . } public String getName() { . . . }
+  public double getSalary() { . . . }
+}
 ```
   Declare a class Manager that inherits from the class Employee and adds an instance variable bonus for storing a salary bonus. Omit constructors and methods.  
 8. Which instance variables does the Manager class from Self Check 7 have?  
