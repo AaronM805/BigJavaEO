@@ -10,8 +10,9 @@
 ```java
 r1.run();
 r2.run();
-```  
-   instead of starting threads?   
+```
+
+  instead of starting threads?  
 
    the `r1` instance would execute it's code and it will exit the `run` method after it was done, and then the `r2` instance would execute. The methods would be called in sequence.   
 
