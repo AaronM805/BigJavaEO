@@ -42,6 +42,22 @@ Thread t = new Thread(new MyRunnable());
 t.start();
 t.interrupt();
 ```
-What output is produced?
+What output is produced?   
 
-1 -> 3 -> 4
+   1 -> 3 -> 4   
+
+5. Give a scenario in which a race condition causes the bank balance to be –100 after one iteration of a `deposit` thread and a `withdraw` thread.
+
+   A scenario where a race condition causes the bank balance to be -100 after one iteration would be if we call the `withdraw` thread before the `deposit` thread.   
+
+6. Suppose two threads simultaneously insert objects into a linked list. Using the implementation in Chapter 16, explain how the list can be damaged in the process.
+
+      If two threads simultaneously insert objects into a linked list, the list can be damaged in that the next element is not guaranteed to be in the sequence that the two threads inserted the object. Also, one object may be missing from the linked list.   
+
+7. If you construct two BankAccount objects, how many lock objects are created?
+
+      Only one lock object is created, since only one thread at at ime can execute eitehr method on a given object.   
+
+8. What happens if we omit the call unlock at the end of the deposit method?
+
+   If we omit the call unlock at the end of the `deposit` method, the thread will still lock this method indefinitely and no other method will have access to it.   
