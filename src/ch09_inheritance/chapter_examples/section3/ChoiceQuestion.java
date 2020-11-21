@@ -1,6 +1,6 @@
-package ch9_inheritance.chapter_examples.section3;
+package ch09_inheritance.chapter_examples.section3;
 
-import ch9_inheritance.chapter_examples.section1.Question;
+import ch09_inheritance.chapter_examples.section1.Question;
 
 import java.util.ArrayList;
 import java.util.List;
