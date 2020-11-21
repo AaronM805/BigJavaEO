@@ -18,14 +18,16 @@ r2.run();
 
 3. Suppose a web browser uses multiple threads to load the images on a web page. Why should these threads be terminated when the user hits the “Back” button?
 
-
+   The threads should be terminated when the user hits the "Back" button because the threads don't need to download the images for that specific page anymore.   
 
 4. Consider the following runnable.
 ```java
 public class MyRunnable implements Runnable {
     public void run() {
         try {
-            System.out.println(1); Thread.sleep(1000); System.out.println(2);
+            System.out.println(1);
+            Thread.sleep(1000);
+            System.out.println(2);
         }
         catch (InterruptedException exception) {
             System.out.println(3);
@@ -36,7 +38,10 @@ public class MyRunnable implements Runnable {
 ```
 Suppose a thread with this runnable is started and immediately interrupted:
 ```java
-Thread t = new Thread(new MyRunnable()); t.start();
+Thread t = new Thread(new MyRunnable());
+t.start();
 t.interrupt();
 ```
 What output is produced?
+
+1 -> 3 -> 4
