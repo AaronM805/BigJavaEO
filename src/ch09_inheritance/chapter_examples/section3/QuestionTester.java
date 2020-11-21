@@ -1,4 +1,4 @@
-package ch9_inheritance.chapter_examples.section3;
+package ch09_inheritance.chapter_examples.section3;
 
 import java.util.Scanner;
 
