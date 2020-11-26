@@ -255,7 +255,7 @@ public class LinkedList {
 		public Object data;
 		public Node next;
 
-		Node() {
+		public Node() {
 			next = null;
 			// this.data = null;
 		}

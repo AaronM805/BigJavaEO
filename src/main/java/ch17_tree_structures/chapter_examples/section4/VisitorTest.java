@@ -35,9 +35,10 @@ public class VisitorTest {
 
 class ShortNameCounter implements Visitor {
     public static int counter = 0;
-    public void visit(Object data) {
+    public boolean visit(Object data) {
         if(data.toString().length() <= 5) {
             counter++;
         }
+        return true;
     }
 }

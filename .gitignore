@@ -1,3 +1,5 @@
 .vscode/*
 **/**/*.class*
 .project
+.settings/
+target/

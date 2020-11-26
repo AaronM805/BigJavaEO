@@ -10,4 +10,4 @@ package ch14_sorting_and_searching.practice_exercises;
 /**
  * Difficulty: Easy
  */
-public class E14_10
+public class E14_10 {}
