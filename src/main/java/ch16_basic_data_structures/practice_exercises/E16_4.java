@@ -85,9 +85,9 @@ public class E16_4 {
     }
 }
 
-class MyLinkedList extends LinkedList {
+class MyLinkedList2 extends LinkedList {
 
-    public MyLinkedList () {
+    public MyLinkedList2() {
         super();
     }
 
