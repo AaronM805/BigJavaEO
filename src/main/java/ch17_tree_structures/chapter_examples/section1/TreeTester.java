@@ -24,7 +24,7 @@ public class TreeTester {
         tree2.addSubtree(new Tree(11));
         tree.addSubtree(tree2);
         System.out.println(tree.size());
-        System.out.println(tree);
+        System.out.println(tree);`
 
         /*
         Tree Structure
