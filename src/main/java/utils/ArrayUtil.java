@@ -2,11 +2,11 @@ package utils;
 
 import java.util.Random;
 
-import ch10_interfaces.chapter_examples.section1.BankAccount;
-import ch10_interfaces.chapter_examples.section1.Country;
-import ch10_interfaces.chapter_examples.section1.Measurable;
+import ch10Interfaces.chapter_examples.section1.BankAccount;
+import ch10Interfaces.chapter_examples.section1.Country;
+import ch10Interfaces.chapter_examples.section1.Measurable;
 
-import ch14_sorting_and_searching.practice_exercises.pojo.Coin;
+import ch14SortingAndSearching.practice_exercises.pojo.Coin;
 
 /**
    This class contains utility methods for array manipulation.

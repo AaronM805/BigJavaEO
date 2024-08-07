@@ -4,6 +4,8 @@ package ch01Introduction.practiceExercises;
  * may impose its own sales taxes. Look on the Internet for the sales
  * tax charged in five U.S. states, then write a program that prints the
  * tax rate for five states of your choice.
+ *
+ * Difficulty: easy
  */
 public class EBusiness1_20 {
 }

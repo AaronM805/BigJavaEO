@@ -3,6 +3,8 @@ package ch01Introduction.practiceExercises;
 /**
  * Write a program that prints the product of the first ten positive integers, 1 × 2 × ... ×
  * 10.
+ *
+ * Difficulty: medium
  */
 public class E1_3 {
 
