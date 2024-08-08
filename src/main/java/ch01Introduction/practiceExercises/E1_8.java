@@ -12,13 +12,14 @@ package ch01Introduction.practiceExercises;
  *  Difficulty: medium
  */
 public class E1_8 {
-  /*
-     _________
-   /  _     _  \
-  (  (_)   (_)  )
-  (     ()      )
-  (    _____    )
-   \   \___/   /
-    \_________/
-   */
+  public void printFace() {
+    System.out.println("  @@@@@@@@@@@");
+    System.out.println("   @@@@@@@@@");
+    System.out.println(" /  _     _  \\");
+    System.out.println("(  (_)   (_)  )");
+    System.out.println("(     ()      )");
+    System.out.println("(    _____    )");
+    System.out.println(" \\   \\___/   /");
+    System.out.println("  \\_________/");
+  }
 }

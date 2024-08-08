@@ -5,7 +5,26 @@ package ch01Introduction.practiceExercises;
  * Internet if you are not familiar with his paintings.) Use character sequences such as
  * @@@ or ::: to indicate different colors, and use - and | to form lines.
  *
- * Difficulty: medium
+ * Difficulty
+ * expected: medium
+ * actual: easy
  */
 public class E1_9 {
+  public void printMondrianPainting() {
+    System.out.println("+--------------------------------------------+");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|::::::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|::::::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
+    System.out.println("|::::::::::::::::::::::::::::::::::::::::::::|");
+    System.out.println("|&&&&::                                  ::  |");
+    System.out.println("|&&&&::                                  ::::|");
+    System.out.println("|&&&&::                                  ::((|");
+    System.out.println("+--------------------------------------------+");
+  }
 }
