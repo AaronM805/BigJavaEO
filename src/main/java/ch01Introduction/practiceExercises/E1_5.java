@@ -7,4 +7,13 @@ package ch01Introduction.practiceExercises;
  * Difficulty: easy
  */
 public class E1_5 {
+  public String displayNameInsideBox() {
+    String displayName = "+----------------+" +
+      "\n" +
+      "| Aaron Martinez |" +
+      "\n" +
+      "+----------------+";
+    System.out.print(displayName);
+    return displayName;
+  }
 }

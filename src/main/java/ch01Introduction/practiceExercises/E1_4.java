@@ -9,21 +9,20 @@ package ch01Introduction.practiceExercises;
  */
 public class E1_4 {
 	private double balance;
-	private double interestRate;
+	private static final double INTEREST_RATE = 0.05;
 	
 	public E1_4() {
 		balance = 1000;
-		interestRate = 0.05;
 	}
 	
 	public void applyInterest() {
-		balance *= (1 + interestRate);
+		balance *= (1 + INTEREST_RATE);
 	}
 	public double balance() {
 		return balance;
 	}
 
 	public double interestRate() {
-		return interestRate;
+		return INTEREST_RATE;
 	}
 }

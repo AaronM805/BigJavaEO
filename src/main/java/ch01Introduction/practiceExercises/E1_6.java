@@ -10,6 +10,14 @@ package ch01Introduction.practiceExercises;
  *  *   *  *    *  *    * *    *   *
  *
  * Difficulty: hard
+ * actual: easy
  */
 public class E1_6 {
+  public void displayName() {
+    System.out.println("  **      **    ****    ****   *     *");
+    System.out.println(" *  *    *  *   *   *  *    *  * *   *");
+    System.out.println("*    *  *    *  ****   *    *  *  *  *");
+    System.out.println("******  ******  *   *  *    *  *   * *");
+    System.out.println("*    *  *    *  *    *  ****   *     *");
+  }
 }

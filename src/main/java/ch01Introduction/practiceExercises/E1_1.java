@@ -1,8 +1,7 @@
 package ch01Introduction.practiceExercises;
 
 /**
- * Write a program that prints a greeting of your choice, perhaps in a language other
- * than English.
+ * Write a program that prints a greeting of your choice, perhaps in a language other than English.
  *
  *  Difficulty: Easy
  */

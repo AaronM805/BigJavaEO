@@ -7,10 +7,11 @@ import javax.swing.JOptionPane;
  * displaying the name that the user typed in.
  *
  * Difficulty: medium
+ * Actual: easy
  */
 public class E1_16 {
   public static void main(String[] args) {
     String name = JOptionPane.showInputDialog("What is your name?");
-    System.out.println(name);
+    System.out.println("Hello, " + name + "!");
   }
 }
