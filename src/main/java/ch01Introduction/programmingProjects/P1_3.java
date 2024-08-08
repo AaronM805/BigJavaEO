@@ -1,7 +1,7 @@
 package ch01Introduction.programmingProjects;
 
-/*
-••• P1.3 The value of π can be computed according to the following formula:
+/**
+ * The value of π can be computed according to the following formula:
  *
  * π
  * 4
@@ -18,7 +18,7 @@ package ch01Introduction.programmingProjects;
  * algorithm must stop after a finite number of steps, you should stop when you have
  * the result determined to six significant dig its.
  *
- *
+ * Difficulty: hard
  */
 public class P1_3 {
 }

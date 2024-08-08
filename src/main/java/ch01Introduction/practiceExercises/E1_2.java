@@ -12,7 +12,7 @@ public class E1_2 {
 		for (int i = 1; i <= 10; i++) {
 			sum += i;
 		}
-		
+
 		return sum;
 	}
 }
