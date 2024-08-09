@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  * Actual: easy
  */
 public class E1_16 {
-  public static void main(String[] args) {
+  public static void greetings() {
     String name = JOptionPane.showInputDialog("What is your name?");
     System.out.println("Hello, " + name + "!");
   }

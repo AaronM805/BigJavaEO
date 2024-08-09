@@ -43,7 +43,7 @@ public class E1_7 {
     MORSE_CODE_MAP.put('Z', "--..");
   }
 
-  public String nameAsMorseCode(String name) {
+  public static String nameAsMorseCode(String name) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < name.length(); i++) {
       String upperCaseName = name.toUpperCase();

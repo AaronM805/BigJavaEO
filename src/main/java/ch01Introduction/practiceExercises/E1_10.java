@@ -14,4 +14,13 @@ package ch01Introduction.practiceExercises;
  * Difficulty: medium
  */
 public class E1_10 {
+  public static void printHouse() {
+    System.out.println("   +");
+    System.out.println("  + +");
+    System.out.println(" +   +");
+    System.out.println("+-----+");
+    System.out.println("| .-. |");
+    System.out.println("| | | |");
+    System.out.println("+-+-+-+");
+  }
 }

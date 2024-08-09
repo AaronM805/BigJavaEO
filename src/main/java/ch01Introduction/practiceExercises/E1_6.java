@@ -13,7 +13,7 @@ package ch01Introduction.practiceExercises;
  * actual: easy
  */
 public class E1_6 {
-  public void displayName() {
+  public static void printName() {
     System.out.println("  **      **    ****    ****   *     *");
     System.out.println(" *  *    *  *   *   *  *    *  * *   *");
     System.out.println("*    *  *    *  ****   *    *  *  *  *");

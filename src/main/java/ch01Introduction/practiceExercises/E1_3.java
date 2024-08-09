@@ -7,7 +7,7 @@ package ch01Introduction.practiceExercises;
  */
 public class E1_3 {
 
-	public long product() {
+	public static long product() {
 		long product = 1;
 		
 		for (int i = 1; i <= 10; i++) {

@@ -6,7 +6,7 @@ package ch01Introduction.practiceExercises;
  *  Difficulty: Easy
  */
 public class E1_1 {
-	public String greet() {
+	public static String greet() {
 		return "Hola Aaron!";
 	}
 }

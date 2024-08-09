@@ -7,7 +7,7 @@ package ch01Introduction.practiceExercises;
  */
 public class E1_2 {
 
-	public int sum() {
+	public static int sum() {
 		int sum = 0;
 		for (int i = 1; i <= 10; i++) {
 			sum += i;

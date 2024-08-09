@@ -14,7 +14,7 @@ public class E1_5Test {
       "| Aaron Martinez |" +
       "\n" +
       "+----------------+";
-    E1_5 nameDisplay = new E1_5();
-    assertEquals(expected, nameDisplay.displayNameInsideBox());
+
+    assertEquals(expected, E1_5.printNameInsideBox());
   }
 }

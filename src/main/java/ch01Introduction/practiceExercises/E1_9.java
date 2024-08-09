@@ -10,7 +10,7 @@ package ch01Introduction.practiceExercises;
  * actual: easy
  */
 public class E1_9 {
-  public void printMondrianPainting() {
+  public static void printMondrianPainting() {
     System.out.println("+--------------------------------------------+");
     System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");
     System.out.println("|    ::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@|");

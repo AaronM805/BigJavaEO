@@ -2,10 +2,10 @@ package ch01Introduction.practiceExercises;
 
 import org.junit.Test;
 
-public class E1_8Test {
+public class E1_16Test {
 
   @Test
-  public void testPrintFace() {
-    E1_8.printFace();
+  public void testGreetings() {
+    E1_16.greetings();
   }
 }

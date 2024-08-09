@@ -12,7 +12,7 @@ package ch01Introduction.practiceExercises;
  *  Difficulty: medium
  */
 public class E1_8 {
-  public void printFace() {
+  public static void printFace() {
     System.out.println("  @@@@@@@@@@@");
     System.out.println("   @@@@@@@@@");
     System.out.println(" /  _     _  \\");

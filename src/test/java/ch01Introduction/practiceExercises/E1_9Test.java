@@ -6,7 +6,6 @@ public class E1_9Test {
 
   @Test
   public void testPrintMondrianPainting() {
-    E1_9 painting = new E1_9();
-    painting.printMondrianPainting();
+    E1_9.printMondrianPainting();
   }
 }
