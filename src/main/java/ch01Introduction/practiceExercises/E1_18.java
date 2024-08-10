@@ -11,8 +11,9 @@ import java.net.URL;
  * Difficulty: medium
  */
 public class E1_18 {
-  public static void main(String[] args) throws MalformedURLException {
-    URL imageLocation = new URL("http://horstmann.com/java4everyone.duke.gif");
-    JOptionPane.showMessageDialog(null, "Hello", "Title", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
+  public static void greetings() throws MalformedURLException {
+    // TODO - need to use a correct image
+    URL imageLocation = new URL("https://www.dropbox.com/scl/fi/d0wthx90va83grxcu9vq3/CA19-20240415131812a.jpg");
+    JOptionPane.showMessageDialog(null, "Buenas Tardes", "Saludos", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
   }
 }
