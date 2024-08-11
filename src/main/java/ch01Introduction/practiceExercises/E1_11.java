@@ -9,7 +9,18 @@ package ch01Introduction.practiceExercises;
  *  | | |   \ Coder!/
  * (__|__)    -----
  *
- *  Difficulty: hard
+ *  Difficulty
+ *  expected: hard
+ *  actual: medium
  */
 public class E1_11 {
+  public static void animalGreetings() {
+    System.out.println("           __       __            ");
+    System.out.println("         /    \\~~~/    \\     __________");
+    System.out.println("   ,----(      . .      )   / HOLA      \\");
+    System.out.println("  /      \\___         __/  /  AARON      \\");
+    System.out.println(" /|              (\\   |(  <   SALUDOS     |");
+    System.out.println("^  \\    /____\\    /\\  |    \\  DE CORAZON / ");
+    System.out.println("    |___|     |___|- \"      \\___________/ ");
+  }
 }
