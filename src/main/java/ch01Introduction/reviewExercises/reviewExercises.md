@@ -1,25 +1,57 @@
-**• R1.1 Explain the difference between using a computer program and programming a
-computer.**
----
+**• R1.1 Explain the difference between using a computer program and programming a computer.**
 
+The difference between using a computer program and programming a computer is that when using a computer  
+
+- you are using something that has already been programmed and tested
+- you are not able to modify the program
+- the program is the final product of the software development lifecycle
+
+When programming a computer
+
+- you have much more control on what the program should do
+- you are most likely working on a program that is not ready to go to production.
+---
 **• R1.2 Which parts of a computer can store program code? Which can store user data?**
 
+Programming code is usually stored in permanent memory. If the program is being used, then the data  
+is most likely stored in RAM.
 ---
 **• R1.3 Which parts of a computer serve to give information to the user? Which parts take
 user input?**
+
+Providing user information:
+
+- monitor
+- printer
+- audio components
+
+Take in user input:
+
+- keyboard
+- mouse
+- computer camera
 ---
-**•• R1.4 A toaster is a single-function device, but a computer can be programmed to carry out
-different tasks. Is your cell phone a single-function device, or is it a programma ble
-computer? (Your answer will depend on your cell phone model.)**
+**•• R1.4 A toaster is a single-function device, but a computer can be programmed to carry out different tasks. Is  
+your cell phone a single-function device, or is it a programmable computer? (Your answer will depend on your cell  
+phone model.)**
+
+My cell phone is a programmable computer. However, it is only programmable by the manufacturer, and it cannot be  
+modified, unless it is jail broken.
 ---
 **•• R1.5 Explain two benefits of using Java over machine code.**
+
+- With Java, the code is written once, but can be deployed to different types of machines
+- Java is a high-level language, which means it is easier to write than machine code
 
 ---
 **•• R1.6 On your own computer or on a lab computer, find the exact location (folder or
 directory name) of**
-- **The sample file HelloPrinter.java, which you wrote with the editor.**
-- **The Java program launcher java.exe or java.**
-- **The library file rt.jar that contains the run-time library.**
+- **The sample file HelloPrinter.java, which you wrote with the editor.**  
+  `~/Development/git/BigJavaEO/src/main/java`
+- **The Java program launcher java.exe or java.**  
+`/usr/bin/java`
+- **The library file rt.jar that contains the run-time library.**  
+`/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib`
 ---
 **•• R1.7 What does this program print?**
 ```java
