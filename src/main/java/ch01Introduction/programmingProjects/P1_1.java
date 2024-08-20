@@ -6,7 +6,9 @@ package ch01Introduction.programmingProjects;
  * way price of a train ticket. You assume the cost of gas at $4 per gallon, and car maintenance at 5 cents per mile.
  * Write an algorithm to decide which commute is cheaper.
  *
- * Difficulty: medium
+ * Difficulty
+ * expected: medium
+ * actual:
  */
 public class P1_1 {
 }

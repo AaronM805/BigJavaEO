@@ -62,6 +62,8 @@ public class Test {
   }
 }
 ```
+39 + 3  
+42
 ---
 **•• R1.8 What does this program print? Pay close attention to spaces.**
 ```java
@@ -72,6 +74,8 @@ public class Test {
     }
 }
 ```
+HelloWorld
+
 ---
 **•• R1.9 What is the compile-time error in this program?**
 ```java
@@ -81,11 +85,21 @@ public class Test {
     }
 }
 ```
+I think that the output would be a method error. An error stating that the method only takes 1 parameter
+
+**actual output `Cannot resolve method println(String, String)`** 
+
 ---
 **•• R1.10 Write three versions of the HelloPrinter.java program that have different compile-
 time errors. Write a version that has a run-time error.**
+
 ---
 **• R1.11 How do you discover syntax errors? How do you discover logic errors?**
+
+Syntax errors will happen at the point of writing a program. The IDE will catch those errors and report the issue. The  
+application will not be able to be executed.
+
+Logic errors occur when the application is executing, and an unexpected behavior occurs.
 
 ---
 **••• R1.12 The cafeteria offers a discount card for sale that entitles you, during a certain period,
@@ -93,11 +107,13 @@ to a free meal whenever you have bought a given number of meals at the regular
 price. The exact details of the offer change from time to time. Describe an algorithm
 that lets you determine whether a particular offer is a good buy. What other inputs
 do you need?**
+
 ---
 **•• R1.13 Write an algorithm to settle the following question: A bank account starts out with
 $10,000. Interest is compounded monthly at 6 percent per year (0.5 percent per
 month). Every month, $500 is withdrawn to meet college expenses. After how many
 years is the account depleted?**
+
 ---
 **••• R1.14 Consider the question in Exercise •• R1.13. Suppose the numbers ($10,000, 6
 percent, $500) were user selectable. Are there values for which the algorithm you
@@ -112,6 +128,7 @@ their dimensions. (Assume the windows and doors have a uniform size.)**
 **•• R1.16 In How To 1.1, you made assumptions about the price of gas and annual usage to
 compare cars. Ideally, you would like to know which car is the better deal without
 making these assumptions. Why can’t a computer program solve that problem?**
+
 ---
 **•• R1.17 Suppose you put your younger brother in charge of backing up your work. Write a
 set of detailed instructions for carrying out his task. Explain how often he should do
